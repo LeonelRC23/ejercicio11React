@@ -4,16 +4,22 @@ import Titulo from './components/Titulo';
 import Formulario from './components/Formulario';
 import Noticias from './components/Noticias';
 import { ARRAY_CATEGORIAS, API_KEY } from './constantes';
+import apiEmergencia from './mocks/apiEmergencia.json';
 
 function App() {
+  let datos = '';
   const [noticias, setNoticias] = useState([]);
   const consultaAPI = async (categoria) => {
-    console.log(categoria);
     const respuesta = await fetch(
       `https://newsapi.org/v2/top-headlines?country=ar&category=${categoria}&apiKey=${API_KEY}`
     );
-    const datos = await respuesta.json();
-    setNoticias(datos.articles);
+    datos = await respuesta.json();
+    console.log(datos);
+    if (respuesta.status < 400) {
+      setNoticias(datos.articles);
+    } else {
+      setNoticias(apiEmergencia.articles);
+    }
   };
   useEffect(() => {
     consultaAPI(ARRAY_CATEGORIAS[0]);
