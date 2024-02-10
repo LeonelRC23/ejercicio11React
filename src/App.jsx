@@ -4,7 +4,8 @@ import Titulo from './components/Titulo';
 import Formulario from './components/Formulario';
 import Noticias from './components/Noticias';
 import { ARRAY_CATEGORIAS, API_KEY } from './constantes';
-import apiEmergencia from './mocks/apiEmergencia.json';
+import apiBusinessEmergencia from './mocks/apiBusinessEmergencia.json';
+import apiEntertainmentEmergencia from './mocks/apiEntertainmentEmergencia.json';
 
 function App() {
   let datos = '';
@@ -20,14 +21,17 @@ function App() {
       console.log(apiEmergencia.articles);
       setNoticias(datos.articles);
     } else {
-      setNoticias(apiEmergencia.articles);
+      if (categoria == 'business') {
+        setNoticias(apiBusinessEmergencia.articles);
+      } else if (categoria == 'entertainment') {
+        setNoticias(apiEntertainmentEmergencia.articles);
+      }
     }
   };
   useEffect(() => {
     consultaAPI(ARRAY_CATEGORIAS[0]);
   }, []);
-  useEffect(() => {
-  }, [noticias]);
+  useEffect(() => {}, [noticias]);
   return (
     <>
       <Titulo />
