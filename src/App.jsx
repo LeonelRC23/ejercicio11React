@@ -6,6 +6,11 @@ import Noticias from './components/Noticias';
 import { ARRAY_CATEGORIAS, API_KEY } from './constantes';
 import apiBusinessEmergencia from './mocks/apiBusinessEmergencia.json';
 import apiEntertainmentEmergencia from './mocks/apiEntertainmentEmergencia.json';
+import apiGeneralEmergencia from './mocks/apiGeneralEmergencia.json';
+import apiHealtEmergencia from './mocks/apiHealtEmergencia.json';
+import apiScienceEmergencia from './mocks/apiScienceEmergencia.json';
+import apiSportEmergencia from './mocks/apiSportEmergencia.json';
+import apiTechnologyEmergencia from './mocks/apiTechnologyEmergencia.json';
 
 function App() {
   let datos = '';
@@ -25,6 +30,16 @@ function App() {
         setNoticias(apiBusinessEmergencia.articles);
       } else if (categoria == 'entertainment') {
         setNoticias(apiEntertainmentEmergencia.articles);
+      } else if (categoria == 'general') {
+        setNoticias(apiGeneralEmergencia.articles);
+      } else if (categoria == 'health') {
+        setNoticias(apiHealtEmergencia.articles);
+      } else if (categoria == 'science') {
+        setNoticias(apiScienceEmergencia.articles);
+      } else if (categoria == 'sports') {
+        setNoticias(apiSportEmergencia.articles);
+      } else if (categoria == 'technology') {
+        setNoticias(apiTechnologyEmergencia.articles);
       }
     }
   };
