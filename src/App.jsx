@@ -9,7 +9,7 @@ import apiEntertainmentEmergencia from './mocks/apiEntertainmentEmergencia.json'
 import apiGeneralEmergencia from './mocks/apiGeneralEmergencia.json';
 import apiHealtEmergencia from './mocks/apiHealthEmergencia.json';
 import apiScienceEmergencia from './mocks/apiScienceEmergencia.json';
-import apiSportEmergencia from './mocks/apiSportEmergencia.json';
+import apiSportEmergencia from './mocks/apiSportsEmergencia.json';
 import apiTechnologyEmergencia from './mocks/apiTechnologyEmergencia.json';
 
 function App() {
