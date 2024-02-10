@@ -7,7 +7,7 @@ import { ARRAY_CATEGORIAS, API_KEY } from './constantes';
 import apiBusinessEmergencia from './mocks/apiBusinessEmergencia.json';
 import apiEntertainmentEmergencia from './mocks/apiEntertainmentEmergencia.json';
 import apiGeneralEmergencia from './mocks/apiGeneralEmergencia.json';
-import apiHealtEmergencia from './mocks/apiHealtEmergencia.json';
+import apiHealtEmergencia from './mocks/apiHealthEmergencia.json';
 import apiScienceEmergencia from './mocks/apiScienceEmergencia.json';
 import apiSportEmergencia from './mocks/apiSportEmergencia.json';
 import apiTechnologyEmergencia from './mocks/apiTechnologyEmergencia.json';
