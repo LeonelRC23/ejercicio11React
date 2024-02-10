@@ -4,9 +4,12 @@ import '../style/Noticias.css';
 
 const Noticias = ({ noticias }) => {
   return (
-    <div className='contenedorCards'>
+    <div className='contenedorCards row m-0'>
       {noticias.map((not) => (
-        <Card key={not.author + "-" + not.publishedAt + "-" + not.title} noticia={not} />
+        <Card
+          key={not.author + '-' + not.publishedAt + '-' + not.title}
+          noticia={not}
+        />
       ))}
     </div>
   );

@@ -10,7 +10,7 @@ function App() {
   const consultaAPI = async (categoria) => {
     console.log(categoria);
     const respuesta = await fetch(
-      `https://newsapi.org/v2/top-headlines?category=${categoria}&apiKey=${API_KEY}`
+      `https://newsapi.org/v2/top-headlines?country=ar&category=${categoria}&apiKey=${API_KEY}`
     );
     const datos = await respuesta.json();
     setNoticias(datos.articles);
@@ -29,7 +29,7 @@ function App() {
           <Formulario consultaAPI={consultaAPI} />
         </div>
         <div className='contenedorNoticias'>
-          <Noticias noticias={noticias}/>
+          <Noticias noticias={noticias} />
         </div>
       </div>
     </>
