@@ -16,6 +16,8 @@ function App() {
     datos = await respuesta.json();
     console.log(datos);
     if (respuesta.status < 400) {
+      console.log(datos.articles);
+      console.log(apiEmergencia.articles);
       setNoticias(datos.articles);
     } else {
       setNoticias(apiEmergencia.articles);
@@ -25,7 +27,6 @@ function App() {
     consultaAPI(ARRAY_CATEGORIAS[0]);
   }, []);
   useEffect(() => {
-    console.log(noticias);
   }, [noticias]);
   return (
     <>
