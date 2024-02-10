@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { ARRAY_CATEGORIAS } from '../constantes';
+import React, { useEffect, useState } from "react";
+import { ARRAY_CATEGORIAS } from "../constantes";
 
-const Formulario = ({consultaAPI}) => {
-  
+const Formulario = ({ consultaAPI }) => {
   return (
     <div>
       <form>
-        <label htmlFor='categoria'>Buscar por categoria</label>
+        <label htmlFor="categoria">Buscar por categoria</label>
         <select
-          name='categoria'
+          name="categoria"
           onChange={(event) => {
             consultaAPI(event.target.value);
           }}

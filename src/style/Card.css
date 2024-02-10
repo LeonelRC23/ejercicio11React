@@ -29,3 +29,31 @@
 .contenedorDescripcion > p {
   padding: 0.5rem;
 }
+
+.contenedorBoton {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorBoton > button {
+  border: 0;
+  width: 90%;
+  height: 2.5rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: rgb(86, 86, 206);
+  color: white;
+}
+
+.contenedorBoton > button:hover {
+  transition: 0.3s;
+  background-color: rgb(122, 122, 208);
+}
+
+.contenedorFuente > p {
+  margin: 0;
+  padding: 0.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+}

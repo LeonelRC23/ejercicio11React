@@ -1,13 +1,12 @@
-import React from 'react';
-import Card from './Card';
-import '../style/Noticias.css';
+import React from "react";
+import Card from "./Card";
 
 const Noticias = ({ noticias }) => {
   return (
-    <div className='contenedorCards row m-0'>
+    <div className="contenedorCards row m-0">
       {noticias.map((not) => (
         <Card
-          key={not.author + '-' + not.publishedAt + '-' + not.title}
+          key={not.author + "-" + not.publishedAt + "-" + not.title}
           noticia={not}
         />
       ))}
