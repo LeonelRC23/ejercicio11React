@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
-import './App.css';
-import Titulo from './components/Titulo';
-import Formulario from './components/Formulario';
-import Noticias from './components/Noticias';
-import { ARRAY_CATEGORIAS, API_KEY } from './constantes';
+import { useState, useEffect } from "react";
+import "./App.css";
+import Titulo from "./components/Titulo";
+import Formulario from "./components/Formulario";
+import Noticias from "./components/Noticias";
+import { ARRAY_CATEGORIAS, API_KEY } from "./constantes";
 
 function App() {
   const [noticias, setNoticias] = useState([]);
@@ -24,11 +24,11 @@ function App() {
   return (
     <>
       <Titulo />
-      <div className='contenedorPrincipal'>
-        <div className='contenedorFormulario'>
+      <div className="contenedorPrincipal">
+        <div className="contenedorFormulario">
           <Formulario consultaAPI={consultaAPI} />
         </div>
-        <div className='contenedorNoticias'>
+        <div className="contenedorNoticias">
           <Noticias noticias={noticias} />
         </div>
       </div>
