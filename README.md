@@ -1,8 +1,12 @@
-# React + Vite
+# Introduccion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto consiste en usar una API de noticias y mostrarlas en pantalla en conjunto con su imagen asociada.
+API: https://newsapi.org/
 
-Currently, two official plugins are available:
+# Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React Bootstrap.
+
+# Observaciones
+
+La API utilizada no devuelve los datos cuando el proyecto esta subido en Netlify, recopile la informacion de la API y la puse en archivos JSON para que funcione, de manera local no hay ningun problema.

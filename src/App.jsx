@@ -22,8 +22,6 @@ function App() {
     datos = await respuesta.json();
     console.log(datos);
     if (respuesta.status < 400) {
-      console.log(datos.articles);
-      console.log(apiEmergencia.articles);
       setNoticias(datos.articles);
     } else {
       if (categoria == 'business') {
